@@ -1,0 +1,21 @@
+public class StringReplace {
+    private String stateName ;
+    public StringReplace(String stateName){
+        this.stateName = stateName ;
+    }
+    public String replaceI(){
+//        String newStatename = null ;
+        return stateName.replace("i","ii") ;
+    }
+    public String replaceSS(){
+//        String newStatename = null ;
+        return stateName.replace("ss","s") ;
+    }
+public static void main(String[] args) {
+        StringReplace stringReplace = new StringReplace("Mississippi") ;
+        String resultI = stringReplace.replaceI();
+        String resultSS = stringReplace.replaceSS() ;
+        System.out.println(resultI.length());
+        System.out.println(resultSS.length());
+    }
+}
